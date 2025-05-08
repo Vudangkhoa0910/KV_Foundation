@@ -1,0 +1,18 @@
+.auth-page{
+    height: 100svh;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-wrapper h1{
+    color: var(--red);
+    text-align: center;
+}
+
+.form-wrapper label{
+    color: var(--red);
+}

@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*define app colors*/
+    --red: #b91c1c;
+    --dark-red: #7f1d1d;
+    --gray: #d4d4d8;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--gray);
+}
+
+a {
+    display: block;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+button{
+    font-family: inherit;
+    color: inherit;
+}
+
+/*some global styles*/
+.error{
+    color: var(--dark-red);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.success{
+    font-weight: bold;
+    color: #16a34a;
+    font-size: 1.25rem;
+}
+
+.action-form{
+    display: flex;
+    align-items: center;
+}
+
+.action-form input[type="submit"]{
+    background: none;
+    color:inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.action-link{
+    padding: .5rem;
+    color: #fff;
+    background-color: var(--red);
+    border-radius: .25rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    height: min-content;
+    font-weight: bold;
+
+    &:hover{
+        background-color: var(--dark-red);
+    }
+}
+
+.action-link.blue{
+    background-color: #3b82f6;
+    &:hover{
+        background-color: #1e40af;
+    }
+}
